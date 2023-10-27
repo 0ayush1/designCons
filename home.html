@@ -35,19 +35,24 @@
 
         #section1, #section2, #section3, #section4{
             height: 600px;
+/*            display: flex;*/
             justify-content: center;
             align-items: center;
             font-size: 24px;
-            padding: 90px;
+            padding-top: 80px;
         }
 
         #section1 {
+            text-align: center;
             background-color: #000000;
         }
 
 
         #section2 {
             background-color: #ddd;
+/*            height: auto;*/
+            justify-content: center;
+/*            padding: 20px;*/
         }
 
         #section3 {
@@ -65,55 +70,62 @@
 
         }
         
-        
-         .image-collection {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .image-item {
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .image-item img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        
         .item1 { grid-area: R1; 
         text-align: center;}
-        .item2 { grid-area: R2; 
-        text-align: center;}
-        .item3 { grid-area: R3; 
-        text-align: center;}
-        .item4 { grid-area: R4; 
-        text-align: center;}
-        .item5 { grid-area: R5; 
-        text-align: center}
+.item2 { grid-area: R2; 
+          text-align: center;}
+.item3 { grid-area: R3; 
+          text-align: center;}
+.item4 { grid-area: R4; 
+          text-align: center;}
+.item5 { grid-area: R5; 
+          text-align: center;}
+.item6 { grid-area: R6; 
+          text-align: center;}
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'R1 R1'
-    'R2 R2'
-    'R3 R3'
-    'R4 R4'
-    'R5 R5';
+      'R1'
+      'R2'
+      'R3'
+      'R4'
+      'R5'
+      'R6';
+/*  gap: 10px;*/
     grid-gap: 15px;
-/*  background-color:darkseagreen;*/
-  padding: 10px;
-    height: auto;
+/*  background-color: #2196F3;*/
+/*  padding: 10px;*/
 }
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+/*  padding: 20px 0;*/
+  font-size: 30px;
+}
+        
+        .abt{display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px; 
+/*            border: 1px solid #000;*/
+        }
+      
+.abt1{ width: 400px; 
+            height: auto; 
+            background-color: #3498db; 
+            margin: 50px;
+    text-align: center;
+            justify-content: center;
+}
+        
+.abt2{width: 400px;
+        height: auto;
+        background-color: #3498db;
+        justify-content: center;
+    text-align: center;
+        margin: 50px;}        
         
     </style>
 </head>
@@ -135,9 +147,9 @@
         <center>
             <h1>Services</h1>
         </center>
-        <!-- <h1>Service</h1> -->
+        <br>
         <div class="row">
-            <div class="col-sm-6" style="background-color:lavender; text-align: center;">INTERIOR DESIGN
+            <div class="col-sm-6" style="background-color:lavender; text-align: center; ">INTERIOR DESIGN
                 <div id="comp-ii24aunc" class="BaOVQ8 tz5f0K comp-ii24aunc wixui-rich-text"
                     data-testid="richTextElement">
                     <p class="font_8 wixui-rich-text__text" style="text-align:center; font-size:15px;">&nbsp;</p>
@@ -172,49 +184,56 @@
                 </div>
             </div>
         </div>
-        <p>This is the second section of the page.</p>
-
 
 
     </div>
     <div id="section3">
-            <h1><b><i><center>Collection</center></i></b></h1>
-            
-            <div class="grid-container">
+        <h1 style="background-color:dimgrey"><center><b>Collection</b></center></h1>
+        <br>
+        <div class="grid-container">
+  <div class="item1">
+      <img src="WhatsApp%20Image%202023-09-20%20at%2011.05.09.jpeg" alt="img1" width="90%">
+            </div>
+  <div class="item2">
+            <img src="WhatsApp%20Image%202023-09-20%20at%2011.05.08%20(1).jpeg" alt="img 2" width="44.5%">
+            <img src="WhatsApp%20Image%202023-09-20%20at%2011.05.08%20(3).jpeg" alt="img 3" width="44.5%">
+            </div>
+  <div class="item3">
+                  <img src="WhatsApp%20Image%202023-09-20%20at%2011.24.53.jpeg" alt="img1" width="44.5%">
+                  <img src="mirror%20img.jpg" alt="img1" width="44.5%">
 
-            <div class="item1" >
-            <img src="WhatsApp%20Image%202023-09-20%20at%2011.05.08%20(1).jpeg" alt="Image 1" width="90%">
-            </div>
-            <div class="item2" style="float: left">
-            <img src="WhatsApp%20Image%202023-09-20%20at%2011.24.53.jpeg" alt="Image 2" width="45%">
-            <img src="mirror%20img.jpg" alt="Image 1" width="45%">
-            </div>
-            <div class="item3">
-            <img src="WhatsApp%20Image%202023-09-20%20at%2011.10.57.jpeg" alt="Image 9" width="90%">
-            </div>
-            <div class="item4" style="float: left">
-            <img src="WhatsApp%20Image%202023-09-20%20at%2011.06.23%20(1).jpeg" width="30%">
-            <img src="WhatsApp%20Image%202023-09-20%20at%2011.05.09.jpeg" width="30%">
-            <img src="WhatsApp%20Image%202023-09-20%20at%2011.06.23.jpeg" width="30%">  
-            </div>
-         
-            <div class="item5">
-
-                <img src="WhatsApp%20Image%202023-09-20%20at%2011.12.47.jpeg" width="90%" height="60%">
-                
-            </div>
-        </div>
-    
-       
+</div>  
+  <div class="item4">  
+      <img src="WhatsApp%20Image%202023-09-20%20at%2011.21.52.jpeg" alt="img1" width="90%">
+</div>
+  <div class="item5">   
+      <img src="imgonline-com-ua-resize-d9vJGtQh8GQMC.jpg" alt="img1" width="29.3%">
+      <img src="WhatsApp%20Image%202023-09-20%20at%2011.05.08.jpeg" alt="img1" width="29.3%">
+      <img src="WhatsApp%20Image%202023-09-20%20at%2011.06.23%20(1).jpeg" alt="img1" width="29.3%">
+</div>
+    <div class="item6">
+       <img src="WhatsApp%20Image%202023-09-20%20at%2011.05.08%20(1).jpeg" alt="img6" width="90%">     
     </div>
-        
-       
-        
+</div>
     </div>
 
     <div id="section4">
         <h1>About</h1>
-        <p>This is the second section of the page.</p>
+<br>
+       <div class="abt">
+        <div class="abt1">
+            <p>Address</p>
+            <p>line 1</p>
+            <p>line 2</p>
+            <p>line 3</p>
+        </div>
+        <br>
+        <div class="abt2">
+            <p>Contact</p>
+            <p>Mobile NO. :- +911234567890</p>
+            <p>Gmail :- exampal.name@demo.com</p>
+        </div>
+       </div>
     </div>
     <script>
         function scrollToSection(sectionId) {
